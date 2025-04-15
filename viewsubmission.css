@@ -1,0 +1,26 @@
+.form-wrapper {
+    max-width: 500px;
+    margin: 150px auto 0 350px; 
+    position: relative;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #43533E;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 16px 16px 0 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #43533E;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    padding: 30px;
+    padding-bottom: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  

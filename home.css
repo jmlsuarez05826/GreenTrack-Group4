@@ -1,0 +1,53 @@
+
+.account-wrapper {
+    max-width: 600px;
+    margin: 120px auto 30px auto;
+    position: relative;
+  }
+  
+  .account-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    background-color: #43533E;
+    color: #ffffff;
+  }
+  
+  .account-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #43533E;
+    border-top: none; 
+    border-radius: 0 0 12px 12px;
+    padding: 20px;
+    padding-bottom: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+  }
+  
+  .account-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .account-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #43533E;
+  }
+  
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    color: #222;
+    border-left: 2px solid #43533E;
+    padding-left: 15px;
+  }
+  
