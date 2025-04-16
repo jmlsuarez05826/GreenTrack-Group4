@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenTrack Homepage</title>
+  <link rel="stylesheet" href="Homepage.css">
+</head>
+
+  <body>
+  <header>
+    <h1>GREENTRACK</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a href= "Login.php" ><button class="login">Login</button></a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="welcome">
+      <h2>Welcome to GreenTrack</h2>
+      <p>GreenTrack is a system that supports and promotes tree planting and reforestation efforts.<br>
+        The system allows organizations, volunteers, and community members to  register <br> and the trees they plant, 
+        track their progress, and measure the positive environmental impact, <br> especially in terms of carbon dioxide (CO₂) reduction.</p>
+        <a href="Register.php" class="join-a"><button class="join-btn">Join Us</button></a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About GreenTrack</h2>
+      <p>About GreenTrack: GreenTrack is a digital platform designed to accelerate global reforestation efforts and support Sustainable Development Goal (SDG) 13: Climate Action. 
+        We empower individuals, organizations, and communities to take meaningful action against climate change-one tree at a time.<p>
+  
+      <p>Through GreenTrack, users can register the trees they plant, contribute to verified reforestation projects, and monitor their impact on the environment, particularly in reducing carbon dioxide (CO2) levels.
+        Each tree planted is tracked using a system-generated QR Code, allowing users to follow its growth and share their climate journey with others.<p>
+
+      <p>Whether you're a volunteer, student, local government, or corporate entity, GreenTrack helps you be part of the solution. 
+        By planting trees and tracking their progress, you're not only restoring ecosystems-you're also building a greener, more sustainable future for generations to come.
+        Join us. Plant a tree. Track your impact. Take climate action.<p>
+  </section>
+
+  <section id="how" class="hiw">
+    <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step-box">
+          <div class="circle">1</div>
+          <div class="step-text">
+            <h2>Sign Up and<br />Choose a Project</h2>
+            <p>Join the GreenTrack community and explore verified tree planting and reforestation initiatives. Select a project aligned with your values and SDG 13: Climate Action, and dedicate your efforts to making a real impact.</p>
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="circle">2</div>
+          <div class="step-text">
+            <h2>Make a Contribution</h2>
+            <p>Decide how many trees you want to plant or support. Whether you're contributing one tree or one thousand, each action counts toward reducing CO₂ and healing the planet.</p>
+          </div>
+        </div>
+        <div class="step-box">
+          <div class="circle">3</div>
+          <div class="step-text">
+            <h2>Track and<br />Share Your Impact</h2>
+            <p>Register your trees in the GreenTrack system and monitor their growth. Watch your reforestation journey unfold and share your environmental impact with others to inspire collective climate action.</p>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="messageType">Message Type</label>
+          <select id="messageType" name="messageType" required>
+            <option value="">Select Message type</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Support Request">Support Request</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    
+</body>
+</html>
+
+
+
