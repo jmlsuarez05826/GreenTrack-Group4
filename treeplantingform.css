@@ -24,7 +24,6 @@
     padding-left: 30px;
     padding-right: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-
 }
 
 .form-group {
@@ -48,6 +47,19 @@
     border-radius: 6px;
 }
 
+.form-group select {
+    height: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path fill="%233C3C3C" d="M1.41 0L6 4.58 10.59 0 12 1.41 6 7.41 0 1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 8px;
+    padding-right: 30px; /* space for dropdown arrow */
+    background-color: white;
+}
+
 textarea {
     resize: vertical;
     height: 100px;
@@ -67,4 +79,32 @@ textarea {
 
 .submit-btn:hover {
     background-color: #43533E;
+}
+
+.tree-description-box {
+    margin: -10px 0 15px 150px;
+    padding: 10px;
+    background-color: #f0f7f0;
+    border-left: 4px solid #43533E;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.tree-description-box.show {
+    opacity: 1;
+}
+
+.tree-description-box {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f7f0;
+    border-left: 4px solid #43533E;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
 }
