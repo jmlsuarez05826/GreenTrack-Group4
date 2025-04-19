@@ -14,7 +14,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('images/forest.jpg');
+      background-image: url('dw.jpg');
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -55,7 +55,7 @@
     .form-container {
       max-width: 300px;
       margin: 100px auto;
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(249, 252, 248, 0.85);
       padding: 25px 30px;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -63,7 +63,7 @@
 
     .tabs {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 20px;
       background: linear-gradient(to right, #556b2f 50%, #ddd 50%);
       border-radius: 25px;
@@ -76,12 +76,9 @@
       border: none;
       background-color: transparent;
       font-weight: bold;
-      cursor: pointer;
-    }
-
-    .tabs .active {
-      background-color: #2e4d1d;
+      cursor: default;
       color: white;
+      background-color: #2e4d1d;
     }
 
     .login-form label {
@@ -97,7 +94,8 @@
       border-radius: 10px;
       padding: 8px 12px;
       margin-bottom: 10px;
-      background-color: white;
+      background-color: rgb(255, 255, 255);
+      position: relative;
     }
 
     .input-group input {
@@ -109,6 +107,8 @@
 
     .icon {
       margin-left: 8px;
+      cursor: pointer;
+      user-select: none;
     }
 
     .options {
@@ -120,7 +120,7 @@
 
     .options a {
       text-decoration: none;
-      color: #333;
+      color: #13582a;
     }
 
     .submit {
@@ -152,8 +152,8 @@
   <div class="form-container">
     <div class="tabs">
       <button class="active">Log In</button>
-      <button>Register</button>
     </div>
+
     <form class="login-form">
       <label>Username</label>
       <div class="input-group">
@@ -163,8 +163,8 @@
 
       <label>Password</label>
       <div class="input-group">
-        <input type="password" placeholder="Password" required />
-        <span class="icon">🔒</span>
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="icon" id="togglePassword">👁️</span>
       </div>
 
       <div class="options">
@@ -175,6 +175,17 @@
       <button class="submit">Login</button>
     </form>
   </div>
+
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function () {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.textContent = type === 'password' ? '👁️' : '🙈';
+    });
+  </script>
 
 </body>
 </html>
