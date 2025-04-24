@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;    
+    min-height: 100vh;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: contain; 
+    width: 100%;
+    max-height: 100%;
+    background-color: #90dcac;
+  }
+
+  .contact {
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 60px;
+    margin-bottom: 90px;
+  }
+  
+  .about p,
+  .contact p {
+    font-size: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .contact label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+   
+  }
+
+  .contact input,
+  .contact select,
+  .contact textarea {
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+  .contact textarea {
+    resize: vertical;
+   
+  }
+  .contact button {
+    display: block;
+    width: 25%;
+    padding: 14px;
+    background-color: #1f4117;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 38%;
+    margin-top: 3%;
+  }
+
+  .contact button:hover {
+    background-color: #1d4ed8;
+  }
