@@ -38,7 +38,7 @@ body {
 }
 
 .contact-container p {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   font-size: 35px;
   color: #333;
 }
@@ -47,15 +47,15 @@ label {
   display: block;
   font-weight: bold;
   margin: 10px 0 5px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 input[type="text"], select, textarea {
-  width: 100%;
+  width: 110%;
   padding: 15px;
-  border-radius:10px;
+  border-radius:15px;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 27px;
 }
 
 textarea {
@@ -81,9 +81,9 @@ textarea {
 }
 
 .contact-info h2 {
-  font-size: 80px;
-  margin-bottom: 20px;
-  margin-top: 50%;
+  font-size: 60px;
+  margin-bottom: 10px;
+
 }
 
 .contact-option {
@@ -125,3 +125,10 @@ body {
   height: 100vh;
 }
 
+.logo {
+  width: 500px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto; 
+
+}
