@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #e0e0e0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  height: calc(95vh - 80px);
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.welcome-section {
+  flex: 1;
+  padding: 60px 250px;
+  background: #f8f8f8;
+  border-right: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  background-image: url("backg2.jpg");
+  background-size: cover;
+}
+
+
+.register-section {
+  flex: 1.5;
+  padding: 60px;
+  position: relative;
+  background-image: linear-gradient(to top, #98ffa8 0%, #3d534e 100%);
+}
+
+.register-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+.register-section h2,
+.register-section form {
+  position: relative;
+  z-index: 2;
+}
+
+.register-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.register-section label {
+  font-size: 12px;
+  color: #333333b4;
+  margin-bottom: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 30px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.submit {
+  background: #038b05;
+  color: #000;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background: #038b0599;
+  cursor: pointer;
+}
+
+.have-account {
+  font-size: 12px;
+  color: #333333b4;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+
+.have-account a {
+  color: #038b05;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.have-account a:hover {
+  text-decoration: underline;
+}
