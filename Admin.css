@@ -1,0 +1,358 @@
+/* Global scrollbar style */
+* {
+    scrollbar-width: none;
+    scrollbar-color: none;
+}
+
+/* Base settings */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8f5;
+    overflow: auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(26, 103, 50);
+    padding: 15px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+  
+  .logo-container h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  .logo-container h1 span {
+    color: #b9fbc0;
+  }
+
+  .nav-links button {
+    background-color: #2e7d3200;
+    border: #ffffff solid  31px;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display:contents;
+    margin-top: 60px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 70px); 
+    overflow-y: auto; 
+    background-color: #0b4330fb;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #a4b0be;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f1f2f6;
+    padding: 8px;
+    display: block;
+    border-radius: 0px;
+    transition: 0.3s ease-out;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: rgb(112, 187, 112);
+    border-left: 10px  solid rgba(2, 141, 13, 0.905);
+    padding: 10px;
+}
+
+.sidebar1 ul li a.logout {
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+
+.main-content {
+    flex-grow: 1;
+    width: 80%;
+    margin-left: 270px;
+    margin-top: 60px;
+    padding: 40px;
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.account-box {
+    background-color: #ffffff;
+    padding: 45px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.myAccount {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: left;
+    font-weight: 700;
+}
+
+.account-box-1 {
+    display: flex;
+    align-items:left;
+    justify-content: left;
+}
+
+.account-info {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+}
+
+.account-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ecf0f1;
+    border: 2px solid #27ae60;
+}
+
+.account-info p {
+    font-size: 17px;
+    color: #2f3542;
+    margin: 8px 0;
+}
+
+.edit-box {
+    background-color: #ffffff;
+    padding: 45px;
+}
+
+.edit-box h3 {
+    font-size: 22px;
+    color: #27ae60;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-account label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+.edit-account input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #2f3542;
+}
+
+.save-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #2ecc71;
+}
+
+
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+.menu-toggle {
+    display: none; /* Hide by default */
+}
+
+/* RESPONSIVE */
+@media (max-width: 780px) {
+    header {
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        gap: 5px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo-container h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        left: -240px;
+        width: 240px;
+        height: calc(100vh - 60px);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .account-box,
+    .edit-box {
+        padding: 20px;
+    }
+
+    .myAccount {
+        font-size: 24px;
+    }
+
+    .account-box-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .account-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .account-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .account-info p {
+        font-size: 15px;
+    }
+
+    .edit-box h3 {
+        font-size: 20px;
+    }
+
+    .edit-account input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .save-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .nav-links button {
+        margin-right: 50px;
+    }
+
+    .menu-toggle {
+        display: block; /* Show only on mobile */
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1001;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+    }
+}
